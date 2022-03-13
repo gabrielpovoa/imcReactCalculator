@@ -13,4 +13,4 @@ Projeto desenvolvido durante o curso B7web [B7web(https://b7web.com.br)]
 
 ## Layout do Projeto
 
-    ![IMC calculadora - resultado final](src/assets/images/finalProejct.jpg/finalProejct.jpg "Final Project")
+    ![IMC calculadora - resultado final](src/assets/images/finalProejct.jpg "Final Project")
