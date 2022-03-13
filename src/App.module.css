@@ -1,0 +1,158 @@
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --max-width: 900px
+}
+
+.main {
+  padding-bottom: 5rem;
+}
+
+header .HeaderContainer {
+  max-width: var(--max-width);
+  margin: 40px auto;
+  box-shadow: var(--box-shadow);
+  background-color: rgba(0, 0, 0, 0.57);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  display: flex;
+}
+
+.container .leftSide {
+  flex: 1;
+  margin-right: 40px;
+}
+
+.container .leftSide h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #F3F3F3;
+}
+
+.container .leftSide p {
+  font-size: 12px;
+  margin-bottom: 40px;
+  margin-top: .5rem;
+  color: #F5F5F5;
+}
+
+.container .leftSide input {
+  width: 100%;
+  border-bottom: .2rem solid rgba(150,163,171.5);
+  padding: 10px 2px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  text-transform: none;
+  background-color: rgba(0, 0, 0, 0.378);
+  color: #FFF;
+}
+
+.container .leftSide input:disabled {
+  opacity: .2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container .leftSide button {
+  background-color: #3700B3;
+  color: #FFF;
+  font-size: 15px;
+  border-radius: .8rem;
+  padding: 15px 0;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: all .3s ease;
+}
+
+.container .leftSide button:hover {
+  box-shadow: var(--box-shadow);
+  background-color: #174252;
+}
+
+.container .leftSide button:disabled {
+  cursor: not-allowed;
+}
+
+.container .rightSide {
+  flex: 1;
+  margin-left: 40px;
+  display: flex;
+  position: relative;
+}
+
+.container .rightSide .grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.container .rightSide .rightBigItem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .rightSide .rightArrow {
+  position: absolute;
+  background-color: #651FFF;
+  width: 70px; height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  left: -35px;
+
+}
+
+.container .rightSide .rightArrow:hover {
+  background-color: #3700B3;
+}
+
+@media screen and (max-width:770px) {
+  header .HeaderContainer {
+    padding: 0 20px;
+  }
+
+  .container {
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
+  .container .leftSide {
+    margin-right: 0;
+  }
+  
+  .container .rightSide {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+  .container .rightSide .rightArrow {
+    top: 0; left: 0;
+    width: 35px; height: 35px;
+    border-radius: 0;
+  }
+  .container .rightSide .rightArrow img {
+    width: 15px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .container .rightSide .grid {
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+  }
+}
