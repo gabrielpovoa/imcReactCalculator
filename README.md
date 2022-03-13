@@ -14,3 +14,4 @@ Projeto desenvolvido durante o curso B7web [B7web(https://b7web.com.br)]
 ## Layout do Projeto
 
 <img src="src/assets/images/finalProejct.jpg" alt="Final Project" style="height: 100px; width:100px;"/>
+    
